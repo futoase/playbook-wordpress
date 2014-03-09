@@ -1,0 +1,9 @@
+---
+- name: install php55
+  yum: name={{ item }} enablerepo=remi,remi-php55
+  with_items:
+    - php
+    - php-devel
+    - php-fpm
+    - php-mbstring
+    - php-mysql

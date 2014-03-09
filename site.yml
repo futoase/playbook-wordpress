@@ -1,0 +1,10 @@
+---
+- name: common configuration to all nodes
+  hosts: all
+  sudo: yes
+  roles:
+    - common
+    - nginx
+    - mysql
+    - php
+    - wordpress

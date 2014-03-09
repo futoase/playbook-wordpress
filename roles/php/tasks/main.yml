@@ -1,0 +1,3 @@
+---
+- include: install.yml
+- include: start-of-php-fpm.yml

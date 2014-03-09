@@ -1,0 +1,3 @@
+---
+- name: create of log dir for wordpress
+  command: mkdir -p /var/log/nginx/wordpress

@@ -1,0 +1,9 @@
+---
+- name: create db the wordpress
+  command: mysql -u root --password='root' -e 'CREATE DATABASE IF NOT EXISTS wordpress;'
+
+- name: set grant to wordpress db
+  command: mysql -u root --password='root' -e "GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED BY 'wordpress'"
+
+- name: flush privileges
+  command: mysql -u root --password='root' -e "FLUSH PRIVILEGES"

@@ -1,0 +1,4 @@
+---
+- name: setup the password
+  command: mysqladmin -u root password 'root'
+  ignore_errors: true
