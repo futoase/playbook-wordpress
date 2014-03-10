@@ -35,6 +35,11 @@ Yes, set this address to the internet browser.
 > open http://vagrant.192.168.33.123.xip.io/
 ```
 
+Author
+------
+
+Original packer template is a https://github.com/hnakamur/my-packer-template-files.
+
 LICENSE
 -------
 
