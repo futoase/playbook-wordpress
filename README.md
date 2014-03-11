@@ -1,4 +1,4 @@
-wordpress-playbook
+playbook-wordpress
 -------------------
 
 ![screen shot](https://f.cloud.github.com/assets/72997/2367441/6bc38a6e-a75f-11e3-9524-9cc66c9f1e4d.png)
