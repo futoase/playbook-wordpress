@@ -7,6 +7,10 @@ BOX_DIR = File.expand_path("~/.box")
 BOX_NAME = "CentOS-6.5-x86_64-mininal"
 BOX_PATH = File.expand_path("~/.box/#{BOX_NAME}.box")
 
+if !FileTest.exists?("packer/builds")
+  Dir.mkdir("packer/builds")
+end
+
 if !FileTest.exists?(BOX_PATH)
   system(%W(
     cd packer && 
