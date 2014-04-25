@@ -1,0 +1,11 @@
+---
+language: python
+
+python:
+  - "2.7"
+
+install:
+  - pip install ansible
+
+script:
+  - ansible-playbook -i vagrant.box site.yml --syntax-check
