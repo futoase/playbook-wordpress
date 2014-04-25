@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Playbook-wordpress by futoase</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/futoase/playbook-wordpress">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Playbook-wordpress</h1>
+            <h2>ansible playbook of the wordpress.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/futoase/playbook-wordpress/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/futoase/playbook-wordpress/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h2>
+<a name="playbook-wordpress" class="anchor" href="#playbook-wordpress"><span class="octicon octicon-link"></span></a>playbook-wordpress</h2>
+
+<p><a href="https://travis-ci.org/futoase/playbook-wordpress"><img src="https://travis-ci.org/futoase/playbook-wordpress.svg?branch=master" alt="Build Status"></a></p>
+
+<p><img src="https://f.cloud.github.com/assets/72997/2367441/6bc38a6e-a75f-11e3-9524-9cc66c9f1e4d.png" alt="screen shot"></p>
+
+<h2>
+<a name="setup-the-host-machine" class="anchor" href="#setup-the-host-machine"><span class="octicon octicon-link"></span></a>Setup the host machine</h2>
+
+<p><strong>Mac OS X only</strong>.</p>
+
+<p>You should be installed the homebrew.
+Execute this command after installed the homebrew.</p>
+
+<pre><code>&gt; brew bundle
+</code></pre>
+
+<p><code>brew bundle</code> is allows us to install of the required softwares.</p>
+
+<h2>
+<a name="running-of-the-ansible-on-vagrant" class="anchor" href="#running-of-the-ansible-on-vagrant"><span class="octicon octicon-link"></span></a>Running of the ansible on vagrant?</h2>
+
+<p>You execute this command.</p>
+
+<pre><code>&gt; vagrant up --provision
+</code></pre>
+
+<h2>
+<a name="can-i-access-to-the-wordpress-on-vagrant" class="anchor" href="#can-i-access-to-the-wordpress-on-vagrant"><span class="octicon octicon-link"></span></a>Can I access to the Wordpress on vagrant?</h2>
+
+<p>Yes, set this address to the internet browser. </p>
+
+<pre><code>&gt; open http://vagrant.192.168.33.123.xip.io/
+</code></pre>
+
+<h2>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<p>Original packer template is a <a href="https://github.com/hnakamur/my-packer-template-files">https://github.com/hnakamur/my-packer-template-files</a>.</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>LICENSE</h2>
+
+<p>MIT.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/futoase">futoase</a> can be found on <a href="https://github.com/futoase/playbook-wordpress">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
