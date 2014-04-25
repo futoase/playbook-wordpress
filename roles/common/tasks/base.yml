@@ -1,6 +1,7 @@
 ---
 - name: install the DevelopmentTool
-  yum: name="@Development tools" state=present
+  yum: name="@Development tools" 
+       state=present
 
 - name: setup the remi repository
   yum: name=http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
