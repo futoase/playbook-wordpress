@@ -1,3 +1,4 @@
 ---
 - name: start of service the php-fpm
-  service: name=php-fpm state=started
+  service: name=php-fpm 
+           state=started

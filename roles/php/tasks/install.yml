@@ -1,6 +1,7 @@
 ---
 - name: install php55
-  yum: name={{ item }} enablerepo=remi,remi-php55
+  yum: name={{ item }} 
+       enablerepo=remi,remi-php55
   with_items:
     - php
     - php-devel

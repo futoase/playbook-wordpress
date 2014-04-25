@@ -1,6 +1,9 @@
 ---
 - name: git clone wordpress
-  git: repo=https://github.com/WordPress/WordPress.git dest=/var/wordpress version=3.8.1
+  git: repo=https://github.com/WordPress/WordPress.git 
+       dest=/var/wordpress 
+       version=3.8.1
 
 - name: copy wp-config.php to server
-  copy: src=wp-config.php dest=/var/wordpress/wp-config.php
+  copy: src=wp-config.php 
+        dest=/var/wordpress/wp-config.php
