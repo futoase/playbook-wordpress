@@ -1,6 +1,6 @@
 ---
 - name: install the mysql
-  yum: name=mysql-community-serverl
+  yum: name=mysql-community-server
        enablerepo=mysql56-community 
        state=present
 
