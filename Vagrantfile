@@ -7,16 +7,16 @@ BOX_DIR = File.expand_path("~/.box")
 BOX_NAME = "CentOS-6.5-x86_64-minimal"
 BOX_PATH = File.expand_path("~/.box/#{BOX_NAME}.box")
 
-if !FileTest.exists?("packer/builds")
-  Dir.mkdir("packer/builds")
+if !FileTest.exists?("packer-template/CentOS-6.5-x86_64/builds")
+  Dir.mkdir("packer-template/CentOS-6.5-x86_64/builds")
 end
 
 if !FileTest.exists?(BOX_PATH)
   system(%W(
-    cd packer && 
+    cd packer-template/CentOS-6.5-x86_64 && 
     packer build template.json && 
     mkdir -p #{BOX_DIR} && 
-    mv builds/#{BOX_NAME}.box #{BOX_PATH} 
+    mv packer-template/CentOS-6.5-x86_64/builds/#{BOX_NAME}.box #{BOX_PATH} 
   ).join(' '))
 end
 
@@ -36,7 +36,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provider :virtualbox do |vb|
     vb.gui = false
-    vb.customize ["modifyvm", :id, "--memory", "512"]
+    vb.customize ["modifyvm", :id, "--memory", "384"]
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
   end
