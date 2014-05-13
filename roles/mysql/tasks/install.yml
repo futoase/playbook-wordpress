@@ -1,9 +1,0 @@
----
-- name: install the mysql
-  yum: name=mysql-community-server
-       enablerepo=mysql56-community 
-       state=present
-
-- name: service the up to mysql
-  service: name=mysqld 
-           state=started
