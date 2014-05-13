@@ -1,5 +1,0 @@
----
-- name: install the nginx from nginx repo.
-  yum: name=nginx 
-       enablerepo=nginx 
-       state=present

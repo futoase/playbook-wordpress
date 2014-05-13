@@ -25,6 +25,7 @@ Running of the ansible on vagrant?
 You execute this command.
 
 ```
+> git submodule update --init
 > vagrant up --provision
 ```
 
