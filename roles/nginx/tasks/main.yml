@@ -1,5 +1,0 @@
----
-- include: repo.yml
-- include: install.yml
-- include: create-of-log-dir-for-wordpress.yml
-- include: copy-file-in-server.yml

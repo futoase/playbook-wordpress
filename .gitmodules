@@ -10,3 +10,6 @@
 [submodule "roles/php"]
 	path = roles/php
 	url = https://github.com/futoase-ansible-roles/php.git
+[submodule "roles/nginx"]
+	path = roles/nginx
+	url = https://github.com/futoase-ansible-roles/nginx.git
